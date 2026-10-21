@@ -1,4 +1,4 @@
-import streamlit as st;
+import streamlit as st
 
 paginas = [
     st.Page("src/atv1.py", title="Atv 1"),
