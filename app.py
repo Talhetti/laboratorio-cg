@@ -1,9 +1,8 @@
-import streamlit as st
-import numpy as np 
+import streamlit as st;
 
-st.title("Olá")
-st.title("Meu nome é Alvaro")
-n = st.slider("Escolha um número", 0, 100, 25)
-img = np.random.randint(0, 256, (n, n), dtype=np.uint8)
-st.image(img, caption=f"Imagem de {n}x{n} pixels", width=300)
-st.write(img)
+paginas = [
+    st.Page("src/atv1.py", title="Atv 1"),
+    st.Page("src/atv2.py", title="Atv 2"),
+]
+
+st.navigation(paginas).run()
